@@ -8,10 +8,13 @@ const props = defineProps({
 
 </script>
 
+
 <template>
     <Head title="Welcome" />
     <div class="flex flex-inline">
-        <div id="weather" class="bg-[url(/public/weatheria-bg.jpg)] w-3/4 h-screen flex flex-inline justify-between text-white p-16 ">
+
+
+        <div id="weather" :class="`bg-[url('/public/images/${weather.time_of_day}/${weather.image}')] bg-cover bg-no-repeat object-contain w-3/4 h-screen flex flex-inline justify-between text-white p-16`">
             <div>
                 <h2 class="text-4xl capitalize">{{ weather.name }}, {{ weather.country }}</h2>
                 <h4 class="text-2xl capitalize">{{  weather.date }}</h4>
@@ -26,12 +29,21 @@ const props = defineProps({
 
             </div>
         </div>
-        <div id="login" class="bg-white w-1/4 h-screen flex align-center">
-            <div class="flex flex-inline justify-center align-center">
-                <ApplicationLogo />
-                <h2 class="font-extrabold text-2xl" >Weatheria</h2>
+        <div id="login" class="bg-white w-1/4 h-screen flex  justify-center items-center p-9">
+            <div class="flex-col justify-center">
+                <div class="flex flex-inline justify-center items-center mb-32">
+                    <ApplicationLogo />
+                    <h2 class="font-extrabold text-2xl" >Weatheria</h2>
+                </div>
+                <div>
+                    <p class="text-4xl font-extrabold">Step into the Elements: Your Instant Window to Real-Time Weather Updates!</p>
+                </div>
+                <div class="mt-10">
+                    <button class="bg-deep-purple-500 hover:bg-deep-purple-400 text-white font-bold py-2 px-4 rounded">
+                        Discover Now
+                    </button>
+                </div>
             </div>
-
         </div>
     </div>
 </template>
