@@ -10,11 +10,13 @@ const props = defineProps({
 
 
 <template>
-    <Head title="Welcome" />
+    <Head title="Welcome"></Head>
     <div class="flex flex-inline">
-
-
-        <div id="weather" :class="`bg-[url('/public/images/${weather.time_of_day}/${weather.image}')] bg-cover bg-no-repeat object-contain w-3/4 h-screen flex flex-inline justify-between text-white p-16`">
+        <div
+            id="weather"
+            :style="{ backgroundImage: `url('/images/${weather.time_of_day}/${weather.image}')` }"
+            class="bg-cover bg-no-repeat object-contain w-3/4 h-screen flex flex-inline justify-between text-white p-16"
+        >
             <div>
                 <h2 class="text-4xl capitalize">{{ weather.name }}, {{ weather.country }}</h2>
                 <h4 class="text-2xl capitalize">{{  weather.date }}</h4>

@@ -15,9 +15,14 @@ class ForgeConnector extends Connector
         $apiKey = 'd9f44a22255c2a5287b7824d4d8e2795';
 
         if ($cityId === null) {
+
 //            $cityId = '2759794'; //Amsterdam
 
-//            $cityId = '5128581';   //New York
+//            $cityId = '1850147'; //Tokyo
+
+//            $cityId = '5554072'; //Juneau
+
+            $cityId = '5128581';   //New York
 
 //            $cityId = '2147714';  //Sydney
 
