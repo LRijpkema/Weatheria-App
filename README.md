@@ -8,12 +8,12 @@ Developed during my internship to learn more about Laravel, Vue, and RESTful API
 
 ## Features
 
-- Real-time and historical weather updates
+- Real-time weather data and updates
 - User authentication and personalized dashboards
 - Responsive design and modern UI
 - User interaction through profiles, saved locations, and comments
-- Personalized weather notifications via OneSignal
-- Explore weather for random locations
+- Weather notifications via OneSignal
+- Explore weather for all locations
 
 ## Technical and Functional Requirements
 
@@ -73,8 +73,9 @@ Developed during my internship to learn more about Laravel, Vue, and RESTful API
 ## Usage
 
 1. Register or log in.
-2. Customize your dashboard by adding/removing widgets and setting preferred locations.
+2. Customize your experience by setting your preferred locations.
 3. Access real-time weather updates.
+4. Share your experience and leave comments on current weather conditions.
 
 ## Technologies Used
 
