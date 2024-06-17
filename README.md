@@ -41,6 +41,7 @@ Developed during my internship to learn more about Laravel, Vue, and RESTful API
 - Composer
 - Node.js & npm
 - Git
+- MySQL
 
 ### Steps
 
@@ -54,4 +55,30 @@ Developed during my internship to learn more about Laravel, Vue, and RESTful API
     composer install
     npm install
    ```
+3. Install the database:
+   ```bash
+    mysql -uroot -p
+    create database weatheria;
+   ```
+4. Run migrations and serve the application:
+   ```bash
+    php artisan migrate
+    php artisan serve
+   ```
+5. Compile assets:
+   ```bash
+    npm run dev
+   ```
+
+## Usage
+
+1. Register or log in.
+2. Customize your dashboard by adding/removing widgets and setting preferred locations.
+3. Access real-time weather updates.
+
+## Technologies Used
+
+- Laravel, MySQL, RESTful API
+- Vue.js, Vue Router, Axios
+- Composer, NPM, Webpack
    
