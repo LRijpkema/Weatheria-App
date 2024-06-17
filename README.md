@@ -79,7 +79,7 @@ Developed during my internship to learn more about Laravel, Vue, and RESTful API
 
 ## Technologies Used
 
-- Laravel, MySQL, RESTful API
-- Vue.js, Vue Router
+- Laravel, MySQL, RESTful API's, Tailwind CSS
+- Vue.js, Chart.js
 - Composer, NPM, Webpack
    
