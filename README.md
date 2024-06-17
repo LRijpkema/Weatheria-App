@@ -1,66 +1,57 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Interactive Weather Dashboard
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+This project is an advanced weather dashboard with user-centric functionality and modern design, built using Laravel and Vue.js.
 
-## About Laravel
+## Project Background and Objectives
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Developed during my internship to learn more about Laravel, Vue, and RESTful APIs, this project aims to provide a rich source of real-time and historical weather data. Users can interact, personalize, and share experiences. The project integrates Laravel Jetstream, Vue3, Tailwind CSS, and the [OpenWeatherMap API](https://openweathermap.org/api/one-call-3), utilizing Laravel's Queues/Jobs.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Features
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- Real-time and historical weather updates
+- User authentication and personalized dashboards
+- Responsive design and modern UI
+- User interaction through profiles, saved locations, and comments
+- Personalized weather notifications via OneSignal
+- Explore weather for random locations
 
-## Learning Laravel
+## Technical and Functional Requirements
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- **Setup:** Configure Laravel Jetstream, Vue3, Inertia.js, and Tailwind CSS.
+- **API Integration:** Custom integration with OpenWeatherMap API using packages like [Saloon](https://docs.saloon.dev/).
+- **Database:** Design schema for weather data storage and periodic updates.
+- **User Interaction:** CRUD operations for profiles, locations, and comments.
+- **Notifications:** Implement OneSignal for weather updates.
+- **Frontend:** Central user dashboard for weather information.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Design and Style Guidelines
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- **Colors:** Vibrant purple and blue tones
+- **Typography:** Clean, sans-serif fonts
+- **Layout:** Grid-based and structured
+- **UI Elements:** Minimalist with subtle shadows
+- **Whitespace:** Generous for clear UI
+- **Data Visualizations:** Informative and readable
 
-## Laravel Sponsors
+## Installation
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### Prerequisites
 
-### Premium Partners
+- PHP >= 7.4
+- Composer
+- Node.js & npm
+- Git
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+### Steps
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+1. Clone the repository and navigate to the directory:
+   ```bash
+   git clone https://github.com/your-username/interactive-weather-dashboard.git
+   cd interactive-weather-dashboard
+   ```
+2. Install backend and frontend dependencies:
+   ```bash
+    composer install
+    npm install
+   ```
+   
