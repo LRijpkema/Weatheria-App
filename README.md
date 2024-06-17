@@ -80,6 +80,6 @@ Developed during my internship to learn more about Laravel, Vue, and RESTful API
 ## Technologies Used
 
 - Laravel, MySQL, RESTful API
-- Vue.js, Vue Router, Axios
+- Vue.js, Vue Router
 - Composer, NPM, Webpack
    
