@@ -20,6 +20,13 @@
         "vue": "^3.3.13"
     },
     "dependencies": {
-        "nprogress": "^0.2.0"
+        "@onesignal/onesignal-vue3": "^2.0.1",
+        "chart.js": "^4.4.2",
+        "moment": "^2.30.1",
+        "nprogress": "^0.2.0",
+        "sweetalert2": "^11.6.13",
+        "vue-chartjs": "^5.3.1",
+        "vue-router": "^4.3.2",
+        "ziggy-js": "^2.1.0"
     }
 }

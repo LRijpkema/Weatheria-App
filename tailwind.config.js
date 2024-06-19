@@ -17,6 +17,10 @@ module.exports = {
     theme: {
         extend: {
             colors: {
+                primary: '#605BFF',
+                accent: '#8733FF',
+                active: '#EEEEFE',
+                default: '#F3F3F3',
                 'deep-purple': {
                     '500': '#605BFF',
                     '400': '#6f6aff',
@@ -25,6 +29,11 @@ module.exports = {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
+        },
+    },
+    variants: {
+        extend: {
+            opacity: ['hover'], // Enable hover variant for opacity
         },
     },
     plugins: [forms, typography],

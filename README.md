@@ -1,85 +1,45 @@
-# Interactive Weather Dashboard
+# laravel-project-lulu/Weatheria
 
-This project is an advanced weather dashboard with user-centric functionality and modern design, built using Laravel and Vue.js.
 
-## Project Background and Objectives
 
-Developed during my internship to learn more about Laravel, Vue, and RESTful APIs, this project aims to provide a rich source of real-time and historical weather data. Users can interact, personalize, and share experiences. The project integrates Laravel Jetstream, Vue3, Tailwind CSS, and the [OpenWeatherMap API](https://openweathermap.org/api/one-call-3), utilizing Laravel's Queues/Jobs.
+## Getting Started
 
-## Features
+Download links:
 
-- Real-time weather data and updates
-- User authentication and personalized dashboards
-- Responsive design and modern UI
-- User interaction through profiles, saved locations, and comments
-- Weather notifications via OneSignal
-- Explore weather for all locations
+SSH clone URL: ssh://git@git.jetbrains.space/modernmediahub/laravel-project-lulu/Weatheria.git
 
-## Technical and Functional Requirements
+HTTPS clone URL: https://git.jetbrains.space/modernmediahub/laravel-project-lulu/Weatheria.git
 
-- **Setup:** Configure Laravel Jetstream, Vue3, Inertia.js, and Tailwind CSS.
-- **API Integration:** Custom integration with OpenWeatherMap API using packages like [Saloon](https://docs.saloon.dev/).
-- **Database:** Design schema for weather data storage and periodic updates.
-- **User Interaction:** CRUD operations for profiles, locations, and comments.
-- **Notifications:** Implement OneSignal for weather updates.
-- **Frontend:** Central user dashboard for weather information.
 
-## Design and Style Guidelines
 
-- **Colors:** Vibrant purple and blue tones
-- **Typography:** Clean, sans-serif fonts
-- **Layout:** Grid-based and structured
-- **UI Elements:** Minimalist with subtle shadows
-- **Whitespace:** Generous for clear UI
-- **Data Visualizations:** Informative and readable
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-## Installation
+## Prerequisites
 
-### Prerequisites
+What things you need to install the software and how to install them.
 
-- PHP >= 7.4
-- Composer
-- Node.js & npm
-- Git
-- MySQL
+```
+Examples
 
-### Steps
+composer install
+npm install
 
-1. Clone the repository and navigate to the directory:
-   ```bash
-   git clone https://github.com/your-username/interactive-weather-dashboard.git
-   cd interactive-weather-dashboard
-   ```
-2. Install backend and frontend dependencies:
-   ```bash
-    composer install
-    npm install
-   ```
-3. Install the database:
-   ```bash
-    mysql -uroot -p
-    create database weatheria;
-   ```
-4. Run migrations and serve the application:
-   ```bash
-    php artisan migrate
-    php artisan serve
-   ```
-5. Compile assets:
-   ```bash
-    npm run dev
-   ```
+mysql -uroot -p
+create database weatheria;
+php artisan migrate
 
-## Usage
+npm run dev
+php artisan serve
 
-1. Register or log in.
-2. Customize your experience by setting your preferred locations.
-3. Access real-time weather updates.
-4. Share your experience and leave comments on current weather conditions.
+php artisan queue:work
+php artisan schedule:work
 
-## Technologies Used
+```
 
-- Laravel, MySQL, RESTful API's, Tailwind CSS
-- Vue.js, Chart.js
-- Composer, NPM, Webpack
-   
+## Deployment
+
+Add additional notes about how to deploy this on a production system.
+
+## Resources
+
+Add links to external resources for this project, such as CI server, bug tracker, etc.
